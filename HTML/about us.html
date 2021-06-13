@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title> About Us</title>
+    <link href="../CSS/about%20us.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/index.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/home.css" rel="stylesheet" type="text/css">
+    <link href="../HTML/submitForm.html" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    
+<!-- Contains the logo, About Us title and Contact Information -->
+    <header class="main">
+    <div class="header">
+    <div class="logo">
+    <a href="../index.html">
+    <img src="../Images/Logo" id="logo" alt="Logo">
+</a>
+</div>
+    <div class="ttl">
+    <h1 class="topttl">ABOUT US</h1>
+</div>
+    <div class="top">
+    <ul id="contactus"><li> <b>Phone:</b> +64-12345678 (New Zealand)</li>
+    <li><b>Email:</b> thesmaacks@gmail.com</li></ul>
+</div>
+</div>
+            
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <a href="../index.html" id="home">Home</a>
+    <a href="../HTML/about%20us.html" id="about">About Us</a>    
+           
+<div class="drop1">             
+    <div class="roomType">Room Types</div>
+    <div class="dropdown1">
+      <a href="../HTML/roomtype.html#room1f">Standard Bedroom</a>
+      <a href="../HTML/roomtype.html#room2f">Deluxe Bedroom</a>
+      <a href="../HTML/roomtype.html#room3f">Executive Studio Bedroom</a>                                        
+</div>
+</div>
+           
+<div class="drop2">
+    <div class="thingsToDo">Things To Do</div>
+    <div class="dropdown2">
+      <a href="../HTML/thingstodo.html#zoo">Hamilton Zoo</a>
+      <a href="../HTML/thingstodo.html#gardens">Hamilton Gardens</a>
+      <a href="../HTML/thingstodo.html#base">The Base</a>
+      <a href="../HTML/thingstodo.html#lake">Hamilton Lake</a>
+</div>
+</div>      
+    <a href="../HTML/Booking.html" id="booking">Booking</a>
+</nav>
+</header>
+
+<!-- Start of the About Us content -->   
+        
+<div class="body">
+    
+<!-- The resort's aims and services -->
+<div id="welcomediv">
+    <h2 id="welcome"> Our Aim and Services</h2>
+    <p id="description"> Located in the heart of the Mighty Waikato, SMAaCKS Resort is the place to stay. With loads of activities including golf, pool, horse riding, table tennis and many more. Our first-class hospitality services include dine in services, buffet services, 24/7 room service, massage parlour, complimentary wireless internet in all our rooms and transportation from the airport. <br> Our aim is to make people feel at home even if they are away from home. We look forward to seeing you. </p>
+</div>
+    
+<div class="about">
+<div class="flex">
+
+<!-- Contact Information, Address, Links to social web page -->
+<section>
+    <h3 id="contact">Contact Us</h3>
+    <ul id="contactlist">
+        <li> <b>Address:</b> 123 Tristam Street,Hamilton CBD Waikato 3210 </li>
+        <li> <b>Phone:</b> +64-12345678 (Within New Zealand)</li>
+        <li><b>Email:</b> thesmaacks@gmail.com</li>
+        <li><b>Fax Number:</b> 1234567 </li>
+        <li><b>Facebook:</b>
+            <a href="https://www.facebook.com/muskaan.sehgal.10"> http://facebook.com/thesmaacs/</a>
+        </li>
+    </ul> 
+</section>
+</div>
+ 
+<!-- Text area or form for customers to inquire or comment --> 
+<div class="flex" >
+<form action="submitForm.html" method="post">
+    <h3 id="questions">Got any questions? We are happy to help. </h3>
+    <label> Name: </label>
+    <input type=text name="customername">
+    <label>Email:</label>
+    <input type="email" name="email"><br> <br>
+    <label> How can we help you? </label><br>
+    <textarea name="input" id="input" cols="61" rows="10"></textarea><br>
+    <input type="submit" name="Submit" value="Submit" id="submit">
+</form>
+</div>
+
+<!-- Google map location of the resort -->
+<div class="flex">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.9929477611245!2d175.27637061506118!3d-37.790205040468244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18af156d0c53%3A0xe3a00d1949e34be!2s123%20Tristram%20Street%2C%20Hamilton%203204!5e0!3m2!1sen!2snz!4v1586512896589!5m2!1sen!2snz" id="map" width="400" height="300"></iframe>  
+</div>
+    
+</div>
+</div>
+        
+</body>
+</html>

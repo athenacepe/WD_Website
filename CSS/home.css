@@ -1,0 +1,82 @@
+/* to edit the whole body*/
+.body{
+    padding: 75px;
+    font-style: oblique;
+    color: darkcyan;
+    margin-top: 10px;
+}
+/*the title at the top of the page*/
+.topttl{
+    width: 100%;
+    text-align: center;
+    font-size: 75px;
+    color: #2E2E2E;
+    text-shadow: 0 0 35PX #595959;
+}
+/*the header*/
+.main{
+    width: 100%;
+    height: auto;
+}
+/* div for the logo conatct info and heading*/
+.header{
+    display: flex;
+    width: 100%;
+}
+/* contact inf0*/
+.top{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 10px;
+    align-content: center;
+}
+/*the title*/
+.ttl{
+    width: 60%;
+}
+/*class logo*/
+.logo{
+    display: flex;
+    width: 20%;
+    margin: 10px;
+}
+/*header with class name as main*/
+header{
+    width: 300px;
+    height: 190px;
+    position: relative;
+    margin: auto;
+}
+/*the logo picture*/
+#logo{
+    width: 300px;
+    height: 150px;
+}
+/*slideshow*/
+.slideshow{
+    width: 60%;
+    height: auto;
+    position: relative;
+    background-size: 100% 100%;
+    animation: slider 30s ease infinite;
+    padding: 10px;
+    margin: auto;
+}
+@keyframes slider{
+    0%{background-image: url("../Images/sroom1.jpg"); width: 1000px; height: 600px}
+    25%{background-image: url("../Images/sroom2.jpg"); width: 1000px; height: 600px}
+    50%{background-image: url("../Images/sroom3.jpg"); width: 1000px; height: 600px}
+    100%{background-image: url("../Images/2beddwithlamp.jpg"); width: 1000px; height: 600px}
+}
+/*the text on the home page*/
+.text{
+    position: sticky;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    left: 15%;
+    font-size: 20px;
+    display: grid;
+    }

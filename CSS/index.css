@@ -1,0 +1,199 @@
+/* the whole nav bar*/
+.navbar {
+    overflow: visible;
+    width: 100%;
+    float: left;
+    background-color: #2E2E2E;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    position:absolute;
+}
+/* for linking the home page*/
+#home {
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+    background-color: #2E2E2E;
+}
+/* when we hover the mouse over the home button*/
+#home:hover {
+    float: left;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+/* linking the booking page*/
+#booking {
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+    background-color: #2E2E2E;
+}
+/* when we hover over the booking page button*/
+#booking:hover {
+    float: left;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+/*linking the room type page and its drop downs*/
+.roomType {
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+/* when we hover over the room type button*/
+.roomType:hover {
+    float: left;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+/*linking the about us page*/
+#about {
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+    background-color: #2E2E2E;
+}
+/* when we hover over the about us*/
+#about:hover {
+    float: left;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+/* linking the things to do page*/
+.thingsToDo {
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+/* when we hover over the things to do*/
+.thingsToDo:hover {
+    float: left;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+/*  the room type button and its drop downs*/
+.drop1 {
+    float: left;
+    cursor: pointer;
+    position: relative;
+    width: auto;
+}
+/* adds styling to the nav bar, the drop down of the room type and the room type button*/
+.navbar .drop1 .roomType {
+    color: whitesmoke;
+    background-color: #2E2E2E;
+    border: none;
+    outline: none;
+    width: auto;
+}
+/* everything inside the room type*/
+.dropdown1 {
+    display: none;
+    position:absolute;
+    width: auto;
+    box-shadow: 0px 10px 20px 0px;
+    z-index: 1;
+    text-align: center;
+    padding-top: 53px;
+}
+/* each of the options inside of the room type button*/
+.dropdown1 a {
+    float: inherit;
+    color: white;
+    background-color: black;
+    padding: 15px 15px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: auto;
+}
+/* when hovering over each of the options*/
+.dropdown1 a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+/*when we over over room type and displays the options*/
+.drop1:hover .dropdown1 {
+    display: block;
+}
+/*things to do button and its drop down options*/
+.drop2 {
+    float: left;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    width: auto;
+}
+/*styles the nav bar, things to do and the options*/
+.navbar .drop2 .thingsToDo {
+    color: whitesmoke;
+    background-color: #2E2E2E;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+/* everything inside the things to do*/
+.dropdown2 {
+    display: none;
+    position:absolute;
+    min-width: 145px;
+    box-shadow: 0px 10px 20px 0px;
+    z-index: 1;
+    text-align: center;
+    padding-top: 53px;
+}
+/* each option inside the things to do*/
+.dropdown2 a {
+    float:inherit;
+    color: white;
+    background-color: black;
+    padding: 15px 15px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+/*when hovering over each of the option in things to do*/
+.dropdown2 a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+/*when we over over room type and displays the options*/
+.drop2:hover .dropdown2 {
+  display: block;
+}

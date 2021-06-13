@@ -1,0 +1,40 @@
+/* Contains the aim and services and the whole about us content */
+/* So that it does not interfere with the Navigation Bar */
+.body{
+    padding: 75px;
+}
+
+/* Contains the whole about us content */
+.about{
+    display: flex;
+    float:left;
+    margin-top:25px;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+
+/* Resizes everything according to the content on the page */
+.flex{
+    display: flex;
+    float:left;
+    margin: auto;
+}
+
+/* Contains the aims and services */
+#welcomediv{
+    font-style: oblique;
+    text-align: center;
+    color: darkcyan; 
+    border: 1px solid;
+    background-color: whitesmoke;
+}
+
+/* Contains the Contact Information, address, and link to social web pages */
+#contact{  
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    
+}

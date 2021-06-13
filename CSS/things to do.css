@@ -1,0 +1,59 @@
+/* for the body*/
+.body {
+    color: darkcyan;
+    padding: 75px;
+} 
+/* text part of the hamilton lake*/
+#HL{ 
+    position: absolute;
+    font-size: 18px;
+    width: 50%;
+    left: 40%;
+}
+/* text part of the hamilton garden*/
+#HG{
+    position: absolute;
+    font-size: 18px;
+    width: 50%;
+    left: 40%;
+}
+/* text part of the hamilton zoo*/
+#HZ{
+    position: absolute;
+    font-size: 18px;
+    width: 50%;
+    left: 40%;
+}
+/* text part of the the base*/
+#TB{
+    position: absolute;
+    font-size: 18px;
+    width: 50%;
+    left: 40%;
+}
+/* the text and image for the zoo*/
+#zoo{
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+/* the text and image for the gardens*/
+#gardens{
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+/* the text and image for the lake*/
+#lake{
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+/* making the base picture reponsive*/
+.resp{
+    height: auto;
+    width: 38%;
+}

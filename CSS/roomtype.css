@@ -1,0 +1,90 @@
+/* Starts the div after the nav bar in the body */
+.body {
+    font-style: oblique;
+    color: darkcyan;
+    padding: 75px;
+}
+
+/* Title for each room*/
+.room{
+    background-color: burlywood;
+    color: darkred;
+}
+
+/* Contains Text and Picture for Room 1 - 1 bed */
+#room1f{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Contains Text and Picture for Room 2 - 2 bed */
+#room2f{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Contains Text and Picture for Room 3 - Studio Room */
+#room3f{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Text for Room 1 - 1 bed */
+.room1{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 700px;
+    margin-right: 150px;
+    margin-top: -20px;
+}
+
+/* Text for Room 2 - 2 bed */
+.room2{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 700px;
+    margin-right: 150px;
+    margin-top: -20px;
+}
+
+/* Text for Room 3 - Studio Room */
+.room3{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 700px;
+    margin-right: 150px;
+    margin-top: -20px;
+}
+
+/* Picture for Room 1 - 1 bed */
+#pic1{
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+/* Picture for Room 2 - 2 bed */
+#pic2{
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+/* Picture for Room 3 - Studio Room */
+#pic3{
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}

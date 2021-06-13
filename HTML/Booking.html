@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Defines the language -->
+<head>
+<!-- Defines Meta Data -->
+    <meta charset="UTF-8">
+<!-- Title -->
+    <title>Booking</title>
+    <link href="../CSS/Booking.css" rel="stylesheet" type="text/css">
+    <script src="../Java/Booking.js"></script>
+    <link href="../CSS/index.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/home.css" rel="stylesheet" type="text/css">
+    <link href="../HTML/submitForm.html" rel="stylesheet" type="text/css">
+</head>
+<!-- Body -->
+    <body onload="startForm()">
+<!-- Header containing top part of the page i.e logo, title, contact info -->
+    <header class="main">
+            <div class="header">
+                <!-- div for logo so it can be styled to stay in a specific place -->
+                <div class="logo">
+        <a href="../index.html">
+<!-- Logo -->
+                    <img src="../Images/Logo" id="logo">
+                    </a>
+                    </div>
+<!-- div for title so it can be placed in the center -->
+                <div class="ttl">
+<!-- Title - Displayed at the top of the page -->
+                <h1 class="topttl">BOOKING</h1>
+                </div>
+<!-- Div for contact information so it can be on the right of title -->
+            <div class="top">
+<!-- Contact information in the header -->
+        <ul id="contactus"><li> <b>Phone:</b> +64-12345678 (New Zealand)</li>
+            <li><b>Email:</b> thesmaacks@gmail.com</li></ul>
+                </div>
+            </div>
+<!-- Nav Bar -->
+        <nav class="navbar">
+<!-- Links home page -->
+    <a href="../index.html" id="home">Home</a>
+<!-- Links about us page -->
+    <a href="../HTML/about%20us.html" id="about">About Us</a>    
+<!-- drop down for room types page -->
+        <div class="drop1">
+<!-- Links home page -->
+    <div class="roomType">Room Types</div>
+    <div class="dropdown1">
+<!-- Drop down content with links to parts of the page -->
+      <a href="../HTML/roomtype.html#room1f">Standard Bedroom</a>
+      <a href="../HTML/roomtype.html#room2f">Deluxe Bedroom</a>
+      <a href="../HTML/roomtype.html#room3f">Executive Studio Bedroom</a>                                        
+    </div>
+  </div>
+<!-- Drop down for things to do page -->
+      <div class="drop2">
+<!-- Links things to do page -->
+    <div class="thingsToDo">Things To Do</div>
+    <div class="dropdown2">
+<!-- Drop down content with links to parts of the page -->
+      <a href="../HTML/thingstodo.html#zoo">Hamilton Zoo</a>
+      <a href="../HTML/thingstodo.html#gardens">Hamilton Gardens</a>
+      <a href="../HTML/thingstodo.html#base">The Base</a>
+        <a href="../HTML/thingstodo.html#lake">Hamilton Lake</a>
+    </div>
+  </div>
+<!-- Links booking page -->
+        <a href="../HTML/Booking.html" id="booking">Booking</a>
+    </nav>
+        </header>
+    
+
+<!-- START OF THE FORM INPUT -->
+<div class="form">
+    <!-- sends the form to submitForm html when confirmed -->
+    <form class="Form1" action="submitForm.html" method="post">
+        <div class="field1">
+<!-- Fieldset for personal details -->
+            <fieldset id="f1">
+<!-- Title of the fieldset -->
+                <legend id="l1">Personal Details</legend>
+                <div class="personal">
+<!-- Title -->
+                    <label for class="title" id="title">Title: </label>
+                
+<!-- Dropdown for title -->
+		<select class="title" id="titleBox">
+            <option value="0" id="T0"></option>
+			<option value="MR">MR</option>
+			<option value="MISS">MISS</option>
+			<option value="MRS.">MRS.</option>
+			<option value="MS.">MS.</option>
+		</select>
+                
+<!-- FIRST NAME -->
+			<label  for="fname" class="fname" id="fname"> First Name: </label>
+            <input type="text" class="guestDetails" id="fname1" name="FirstName" required placeholder="FIRST NAME"  title="ENTER FIRST NAME">
+<!-- MIDDLE NAME -->
+            <label  for="mname" class="mname" id="mname"> Middle Name: </label>
+            <input type="text" class="guestDetails" id="mname1" name="MiddleName" required placeholder="MIDDLE NAME"  title="ENTER MIDDLE NAME">
+<!-- LAST NAME -->
+            <label for="lname" class="lname" id="lname"> Last Name: </label>
+		  <input type="text" class="guestDetails" id="lname1" name="LastName" required placeholder="LAST NAME"  title="ENTER LAST NAME" element onclick="validateLName();">
+<!-- EMAIL -->
+			<label for ="email" class="email" id="email"> Email: </label>
+			<input type="email" class="guestDetails" id="email1" name="Email" class="email" required placeholder="EXAMPLE@EXAMPLEMAIL.COM" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="ENTER EMAIL ADDRESS">
+<!-- Contact -->
+		  <label for="contact" class="contact" id="contact"> Contact Number: </label>
+		  <input type="tel" class="guestDetails" id="contact1" required placeholder="CONTACT NUMBER"  title="ENTER CONTACT NUMBER">
+                </div>
+                
+		</fieldset>
+        </div>
+		<br> 
+        
+<!-- Booking Information -->	
+    <div class="field2">
+  <fieldset id="f2">
+		<legend id="l2"> Booking Information</legend>
+      <div class="personal2">
+          
+<!-- Room Type Dropdown -->
+            <label for="RoomType" class="RT" id="RT">Room Type: </label>
+		<select class="RT" id="RT1" oninput = "updatePrice()" >
+            <option value="" id="Room"> </option>
+			<option value="80">1 Bedroom Unit</option>
+			<option value="120">2 Bedroom Unit</option>
+            <option value="180">Studio</option>
+		</select>
+          
+<!-- Number of Rooms -->
+            <label for="RoomNums" class="NR" id="NR">Number of Rooms: </label>
+		<select class="NR" id="NumRoom" oninput = "updatePrice()">
+			<option value="0"></option>
+            <option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+            <option value="4">4</option>
+		</select>
+   	
+<!-- Number of Adults -->
+    <p id="MNA">Max number of adults allowed is 5</p>
+    <label class="NA" id="NA">Number of Adults: </label>
+		<select class="NA" id="NA1" oninput = "updatePrice()">
+            <option value="0"></option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+		</select>
+
+<!-- Number of Children-->
+            <p id="MNC">Max number of children allowed is 5</p>
+            <label for="NC" class="NC" id="NC">Number of Children: </label>
+		<select class="NC" id="NC1" oninput = "updatePrice()">
+            <option value="0"></option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+		</select>
+          </div>
+      <div class="field3">
+<!-- START DATE -->
+      <div class="personal3">
+            <label for="Start" id="start">Start Date:</label>
+            <input type="date" id="start1" name="start1" class="stayDate" oninput="dateInput(); updatePrice();">
+          
+<!-- END DATE -->
+            <label for="End" id="end">End Date:</label>
+            <input type="date" id="end1" name="end1" class="stayDate" oninput="dateInput(); updatePrice();">
+          
+<!-- ESTIMATED TIME OF ARRIVAL -->
+            <label for="time" id="time">Estimated Time of Arrival:</label>
+            <p id="invalid">Please enter a valid date.</p>
+            <input id="ETA" type="time" class="stayDate" value="14:00:00">
+          </div>
+          
+ <!-- BREAKFAST -->
+        <p id="breakfast"> Would you like breakfast included: </p> 
+		<input type="checkbox" id="bf" onclick = "updatePrice()">
+		<label for="bf"></label>
+    
+      </div>
+    
+</fieldset> 
+</div>
+        <fieldset id="personal4">
+<!-- TOTAL PRICE -->
+            <legend>Price</legend>
+      <div id="totalPrice" class="field2">
+          <h3 id="Total"> Total Rate: </h3>
+          <h2 id="Price"> $ </h2>
+        </div>
+            </fieldset>
+<div>
+<!-- SUBMIT AND RESET BUTTONS -->
+        <input type="submit" name="Submit" value="Confirm Booking" class="button">
+        <input type="Reset" onclick="resetInfo()" class="button">
+</div>
+</form>
+    
+    
+</div>
+        
+<!-- Links java file to html -->
+<script src="Booking.js"> </script>
+</body>
+</html>
